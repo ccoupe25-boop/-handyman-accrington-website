@@ -33,6 +33,25 @@ footer{background:#091827;color:#bdc8d2;padding:28px 0;font-size:14px}.foot{disp
 .panelling-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:24px}.panelling-gallery figure{background:#fff;border-radius:10px;overflow:hidden}.panelling-gallery img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}.panelling-gallery figcaption{position:static;background:var(--navy);color:#fff;padding:10px;font-size:12px;letter-spacing:0}@media(max-width:850px){.panelling-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.panelling-gallery{grid-template-columns:1fr}}
 
 .service-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.service-links a{color:var(--navy);font-weight:800}.service-detail{max-width:840px;margin:auto}.service-detail h2{font-size:30px;line-height:1.2}.service-detail h3{margin-bottom:6px}.service-detail p{margin-top:8px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.detail-grid article{background:var(--light);padding:24px;border-radius:12px}.detail-photo{display:block;width:100%;height:auto;border-radius:12px}.breadcrumbs{padding:16px 0;font-size:14px}.breadcrumbs a{color:var(--navy)}details{padding:18px 0;border-bottom:1px solid #d7e0e8}summary{font-weight:800;cursor:pointer}a:focus-visible,summary:focus-visible{outline:3px solid #1676c5;outline-offset:4px}section[id]{scroll-margin-top:90px}.footer-services{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}.footer-services a{color:#fff}img{max-width:100%}.service-page .hero-grid{grid-template-columns:1fr}.service-page .hero p{max-width:780px}.service-page .hero{padding:56px 0}.service-page h1{font-size:clamp(32px,4.8vw,54px)}.detail-grid figure figcaption{position:static;background:transparent;color:var(--ink);padding:10px 0;font-size:14px;letter-spacing:0}@media(max-width:560px){.detail-grid{grid-template-columns:1fr}.nav{gap:8px}.navcta{font-size:11px!important;padding:11px}.service-page .hero{padding:36px 0}}
+
+/* Clean mobile navigation and readable spacing */
+.mobile-menu{display:none}
+@media(max-width:850px){
+ .nav .links{display:none!important}
+ .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+ .brand{min-width:0}.brand>div:last-child{font-size:clamp(12px,3.2vw,18px);line-height:1.12}
+ .mobile-menu{display:block;position:relative;border:0;padding:0;flex-shrink:0}
+ .mobile-menu summary{list-style:none;cursor:pointer;background:#fac62e;color:#10263f;border-radius:9px;padding:12px 14px;font-size:15px;font-weight:800;white-space:nowrap}
+ .mobile-menu summary::-webkit-details-marker{display:none}
+ .mobile-menu-links{position:absolute;right:0;top:calc(100% + 10px);width:min(78vw,290px);background:white;border-radius:12px;box-shadow:0 14px 35px #0004;z-index:100;padding:8px;display:grid}
+ .mobile-menu-links a{color:#10263f;padding:12px 14px;font-weight:750;text-decoration:none;border-bottom:1px solid #e8edf2}
+ .mobile-menu-links a:last-child{border-bottom:0;background:#fac62e;border-radius:7px}
+ .head h2,.two h2,.cta h2{font-size:clamp(25px,6vw,34px)!important;line-height:1.18;overflow-wrap:break-word}
+ .quote h2{font-size:clamp(23px,5.5vw,31px);line-height:1.2}
+ .quote{padding:clamp(20px,5vw,32px)!important}
+ section{padding:46px 0}
+ .head p{line-height:1.55}
+}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", "name": "Handyman Multi-Trade Solutions", "telephone": "+44 7793 531907", "areaServed": "Accrington, Lancashire", "description": "Property repairs, maintenance and improvements for homeowners and landlords in Accrington and surrounding areas.", "sameAs": ["https://www.facebook.com/share/19vhv5v6Xc/?mibextid=wwXIfr", "https://www.instagram.com/handyman_accrington", "https://www.tiktok.com/@handyman.accrington"]}</script>
 </head>
@@ -41,7 +60,7 @@ footer{background:#091827;color:#bdc8d2;padding:28px 0;font-size:14px}.foot{disp
 <nav><div class="container nav">
 <a class="brand" href="#top"><div class="mark">HM</div><div>HANDYMAN<br><span>MULTI-TRADE SOLUTIONS</span></div></a>
 <div class="links"><a href="#services">Services</a><a href="#work">Our Work</a><a href="#before-after">Before & After</a><a href="#landlords">Landlords</a><a href="#contact">Contact</a><a class="btn yellow navcta" href="https://wa.me/447793531907?text=Hi%20Colin%2C%20I%27d%20like%20a%20quote.%20I%20can%20send%20photos%20of%20the%20job.">WHATSAPP A JOB</a></div>
-</div></nav>
+<details class="mobile-menu"><summary aria-label="Open navigation">Menu ☰</summary><div class="mobile-menu-links"><a href="#top">Home</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#before-after">Before & After</a><a href="#landlords">Landlords</a><a href="#contact">Contact</a><a href="tel:+447793531907">Call 07793 531907</a><a href="https://wa.me/447793531907">WhatsApp</a></div></details></div></nav>
 
 <header class="hero" id="top"><div class="container hero-grid">
 <div><div class="eyebrow">Handyman & Property Maintenance • Accrington</div><h1>Handyman Services, Property Maintenance &amp; Home Improvements</h1><p>From small household repairs and odd jobs to larger property improvements in Accrington and nearby areas. One call. One person. Multiple trades.</p>
